@@ -1,5 +1,7 @@
 sudo: true
 language: java
+before_install:
+ - chmod +x gradlew
 install: gradle assemble
 jdk:
   - oraclejdk8

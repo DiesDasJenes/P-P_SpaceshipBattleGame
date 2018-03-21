@@ -1,5 +1,5 @@
 # CURRENTLY NOT WORKING 
-[![Build Status](https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame.svg?branch=master)](https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame)
+[![Build Status](https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame.svg?branch=master)](https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame)[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)[![codecov](https://codecov.io/gh/DiesDasJenes/P-P_SpaceshipBattleGame/branch/master/graph/badge.svg)](https://codecov.io/gh/DiesDasJenes/P-P_SpaceshipBattleGame)
 # Pen and Paper SpaceshipBattleGame
 
 I wrote this little "game" for my own Pen &amp; Paper adventure in which the crew had to fight an enemy spaceship.

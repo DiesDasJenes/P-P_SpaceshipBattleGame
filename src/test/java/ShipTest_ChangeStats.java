@@ -1,18 +1,12 @@
 
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import static org.junit.Assert.*;
-
 
 public class ShipTest_ChangeStats {
     Ship testShip;
     Ship baddyShip;
 
     @org.junit.Before
-    void Before(){
+    public void Before(){
         ShipConfiguration conf = new ShipConfiguration();
         conf.setType(ShipType.Corvette);
         testShip = new Ship(conf);

@@ -6,3 +6,7 @@ install: gradle assemble
 jdk:
   - oraclejdk8
   - openjdk8
+after_success:
+  - if [ -e ./gradlew ]; then ./gradlew jacocoTestReport;else gradle jacocoTestReport;fi
+    export CODECOV_TOKEN=b03fd2f0-82e9-4669-85da-c9f3d89e8913
+  - bash <(curl -s https://codecov.io/bash)

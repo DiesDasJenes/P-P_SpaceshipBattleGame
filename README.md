@@ -1,5 +1,5 @@
 # CURRENTLY NOT WORKING 
-https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame.svg?branch=master
+[![Build Status](https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame.svg?branch=master)](https://travis-ci.org/DiesDasJenes/P-P_SpaceshipBattleGame)
 # Pen and Paper SpaceshipBattleGame
 
 I wrote this little "game" for my own Pen &amp; Paper adventure in which the crew had to fight an enemy spaceship.

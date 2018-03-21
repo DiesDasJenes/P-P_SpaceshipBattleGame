@@ -1,0 +1,8 @@
+sudo: false
+language: java
+install: gradle assemble
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk7
+  - openjdk8

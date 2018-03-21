@@ -1,25 +1,24 @@
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import org.junit.Before;
-import org.junit.runner.RunWith;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
-@RunWith(Arquillian.class)
-public class ShipTest_ChangeStats {
-    @Deployment
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class)
-                .addClass(Ship.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-    }
 
-    @Before
-    void before(){
-        Ship testShip = new Ship("Testo", 200,100,100,100,100);
+public class ShipTest_ChangeStats {
+    Ship testShip;
+    Ship baddyShip;
+
+    @org.junit.Before
+    void Before(){
+        ShipConfiguration conf = new ShipConfiguration();
+        conf.setType(ShipType.Corvette);
+        testShip = new Ship(conf);
+        testShip.getConfiguration().setShipName("Testo");
+        baddyShip = new Ship(conf);
+        baddyShip.getConfiguration().setShipName("Baddy");
     }
 
     @org.junit.Test

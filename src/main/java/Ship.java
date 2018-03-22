@@ -1,9 +1,17 @@
 public class Ship {
-    ShipConfiguration Configuration;
-    ShipBehavior Behavior;
+    private ShipConfiguration Configuration;
+    private ShipBehavior Behavior;
     Ship(ShipConfiguration confShip) {
         this.Configuration = confShip;
         Behavior = new ShipBehavior(Configuration);
+    }
+
+    public ShipConfiguration getConfiguration() {
+        return Configuration;
+    }
+
+    public ShipBehavior getBehavior() {
+        return Behavior;
     }
 
     @Override
@@ -16,13 +24,5 @@ public class Ship {
                 ", EvasionV=" + (int) Configuration.getEV() +
                 ", AccuracyV=" + (int) Configuration.getAV()  +
                 '}';
-    }
-
-    public ShipConfiguration getConfiguration() {
-        return Configuration;
-    }
-
-    public ShipBehavior getBehavior() {
-        return Behavior;
     }
 }

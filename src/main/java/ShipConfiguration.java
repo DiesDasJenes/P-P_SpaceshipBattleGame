@@ -16,19 +16,19 @@ public class ShipConfiguration {
         return value <= maxValue ? value : maxValue;
     }
 
-    private void reduceShieldPower() {
+    protected void reduceShieldPower() {
         if (this.SP >= 0) {
             this.SP -= Math.random() * 20;
         }
     }
 
-    private void reduceAccuracyValue() {
+    protected void reduceAccuracyValue() {
         if (this.AV >= 10) {
             this.AV -= Math.random() * 20;
         }
     }
 
-    private void reduceEvasionValue() {
+    protected void reduceEvasionValue() {
         if (this.EV >= 10) {
             this.EV -= Math.random() * 20;
         }

@@ -7,7 +7,7 @@ public class ShipBehavior {
 
     int fire(int DMG, double SP, double EV, double AV) {
         double totalDMG = ((DMG * SP) / 100) / AV - EV;
-        return (int)totalDMG;
+        return (int)totalDMG < 0 ? 0 : (int)totalDMG;
     }
 
 

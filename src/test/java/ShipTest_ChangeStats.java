@@ -21,7 +21,7 @@ public class ShipTest_ChangeStats {
     }
 
     private boolean lessThan(double a, double b){
-        return a < b;
+        return a <= b;
     }
 
     @org.junit.Test

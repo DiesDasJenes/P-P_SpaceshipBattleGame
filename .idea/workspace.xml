@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dd6adb-63cf-4d5f-9a81-993f3e74792c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ShipBehaviorTest.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ShipFight_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/ShipFight_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Pen_and_Paper_ShipFightGamet_jar/ShipFight.jar" afterPath="$PROJECT_DIR$/out/artifacts/Pen_and_Paper_ShipFightGamet_jar/ShipFight.jar" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Ship.class" afterPath="$PROJECT_DIR$/out/production/classes/Ship.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ShipBehavior.class" afterPath="$PROJECT_DIR$/out/production/classes/ShipBehavior.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ShipConfiguration.class" afterPath="$PROJECT_DIR$/out/production/classes/ShipConfiguration.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ShipTest_ChangeStats.class" afterPath="$PROJECT_DIR$/out/test/classes/ShipTest_ChangeStats.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ship.java" afterPath="$PROJECT_DIR$/src/main/java/Ship.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShipBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/ShipBehavior.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShipConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/ShipConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FightSimulationTest.java" afterPath="$PROJECT_DIR$/src/test/java/FightSimulationTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ShipTest_ChangeStats.java" afterPath="$PROJECT_DIR$/src/test/java/ShipTest_ChangeStats.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -89,7 +76,7 @@
       <file leaf-file-name="ShipBehavior.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ShipBehavior.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="-46">
               <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
               <folding>
                 <element signature="e#111#112#0" expanded="true" />
@@ -176,13 +163,13 @@
       <file leaf-file-name="ShipTest_ChangeStats.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ShipTest_ChangeStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="438">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
               <folding>
                 <element signature="e#607#608#0" expanded="true" />
                 <element signature="e#636#637#0" expanded="true" />
                 <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -591,10 +578,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Ship.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShipConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShipBehavior.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ShipTest_ChangeStats.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShipBehavior.java" />
         <option value="$PROJECT_DIR$/src/test/java/FightSimulationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShipBehaviorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ShipTest_ChangeStats.java" />
       </list>
     </option>
   </component>
@@ -929,7 +916,7 @@
       <updated>1521631037281</updated>
       <workItem from="1521631040223" duration="13159000" />
       <workItem from="1521672441372" duration="881000" />
-      <workItem from="1521730564802" duration="4649000" />
+      <workItem from="1521730564802" duration="5283000" />
     </task>
     <servers />
   </component>
@@ -955,8 +942,8 @@
     <history-entry file="ShipTest_ChangeStats - 2018.03.22 at 17h 02m 44s.xml">
       <configuration name="ShipTest_ChangeStats" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShipTest_ChangeStats_fire - 2018.03.22 at 16h 28m 50s.xml">
-      <configuration name="ShipTest_ChangeStats.fire" configurationId="JUnit" />
+    <history-entry file="ShipTest_ChangeStats - 2018.03.22 at 21h 01m 01s.xml">
+      <configuration name="ShipTest_ChangeStats" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ShipTest_ChangeStats_reduceHealth - 2018.03.22 at 16h 32m 07s.xml">
       <configuration name="ShipTest_ChangeStats.reduceHealth" configurationId="JUnit" />
@@ -966,7 +953,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18689000" />
+    <option name="totallyTimeSpent" value="19323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -981,7 +968,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1139,7 +1126,7 @@
             <element signature="e#607#608#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1267,7 +1254,7 @@
             <element signature="e#607#608#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1364,17 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ShipBehavior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#111#112#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShipTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1395,6 +1371,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ShipBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShipBehaviorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1407,13 +1394,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShipTest_ChangeStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="438">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding>
             <element signature="e#607#608#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
           </folding>
         </state>
       </provider>

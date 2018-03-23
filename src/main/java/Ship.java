@@ -1,16 +1,16 @@
 public class Ship {
-    private ShipConfiguration Configuration;
-    private ShipBehavior Behavior;
-    Ship(ShipConfiguration confShip) {
+    private Configuration Configuration;
+    private Behavior Behavior;
+    Ship(Configuration confShip) {
         this.Configuration = confShip;
-        Behavior = new ShipBehavior(Configuration);
+        Behavior = new Behavior(Configuration);
     }
 
-    public ShipConfiguration getConfiguration() {
+    public Configuration getConfiguration() {
         return Configuration;
     }
 
-    public ShipBehavior getBehavior() {
+    public Behavior getBehavior() {
         return Behavior;
     }
 

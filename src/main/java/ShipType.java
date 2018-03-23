@@ -17,6 +17,7 @@ public enum ShipType {
         this.SP = SP;
         this.EV = EV;
         this.AV = AV;
+
     }
 
     @Override

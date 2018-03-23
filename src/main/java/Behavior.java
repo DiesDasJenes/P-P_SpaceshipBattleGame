@@ -1,7 +1,7 @@
-public class ShipBehavior {
-    ShipConfiguration configuration;
+public class Behavior {
+    Configuration configuration;
 
-    ShipBehavior(ShipConfiguration confShip) {
+    Behavior(Configuration confShip) {
         this.configuration = confShip;
     }
 

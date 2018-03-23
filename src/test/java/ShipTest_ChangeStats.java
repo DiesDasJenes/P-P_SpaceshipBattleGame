@@ -6,7 +6,7 @@ public class ShipTest_ChangeStats {
 
     @org.junit.Before
     public void Before(){
-        ShipConfiguration conf = new ShipConfiguration();
+        Configuration conf = new Configuration();
         conf.setType(ShipType.Corvette);
         testShip = new Ship(conf);
         testShip.getConfiguration().setShipName("Testo");

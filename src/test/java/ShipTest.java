@@ -1,8 +1,5 @@
 
 
-import java.util.Arrays;
-import java.util.List;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 
@@ -12,7 +9,7 @@ public class ShipTest {
 
     @org.junit.Test
     public void ship_not_null(){
-        ShipConfiguration conf = new ShipConfiguration();
+        Configuration conf = new Configuration();
         conf.setType(ShipType.Corvette);
         conf.setShipName("Testo");
         Ship ship = new Ship(conf);
@@ -21,7 +18,7 @@ public class ShipTest {
 
     @org.junit.Test
     public void constructor_values_not_over_maximum(){
-        ShipConfiguration conf = new ShipConfiguration();
+        Configuration conf = new Configuration();
         conf.setType(ShipType.Corvette);
         conf.setShipName("Testo");
         Ship ship = new Ship(conf);

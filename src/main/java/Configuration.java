@@ -1,4 +1,4 @@
-public class ShipConfiguration {
+public class Configuration {
     private int DMG;
     private double SP;
     private double EV;
@@ -8,28 +8,23 @@ public class ShipConfiguration {
     private double maxValue = 100;
     private ShipType type;
 
-    ShipConfiguration() {
-    }
-
-
-    private double check_and_correct_to_maximum_value(double value) {
-        return value <= maxValue ? value : maxValue;
+    Configuration() {
     }
 
     protected void reduceShieldPower() {
-        if (this.SP >= 0) {
+        if (this.SP >= 20) {
             this.SP -= Math.random() * 20;
         }
     }
 
     protected void reduceAccuracyValue() {
-        if (this.AV >= 10) {
+        if (this.AV >= 20) {
             this.AV -= Math.random() * 20;
         }
     }
 
     protected void reduceEvasionValue() {
-        if (this.EV >= 10) {
+        if (this.EV >= 20) {
             this.EV -= Math.random() * 20;
         }
     }

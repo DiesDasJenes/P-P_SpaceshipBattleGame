@@ -18,13 +18,13 @@ public class FightSimulation {
     }
 
     private Ship initShipConfiguration() {
-        ShipConfiguration config = askForConfiguration();
+        Configuration config = askForConfiguration();
         Ship s = new Ship(config);
         return s;
     }
 
-    private ShipConfiguration askForConfiguration(){
-        ShipConfiguration config = new ShipConfiguration();
+    private Configuration askForConfiguration(){
+        Configuration config = new Configuration();
 
         System.out.println("Wie ist der Name des Raumschiffes?");
         config.setShipName(getInput());

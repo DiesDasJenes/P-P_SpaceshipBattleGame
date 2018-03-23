@@ -27,7 +27,6 @@ public class ShipTest_ChangeStats {
     @org.junit.Test
     public void fire() {
         int damage = testShip.getBehavior().fire(testShip.getConfiguration().getDMG(),baddyShip.getConfiguration().getSP(),baddyShip.getConfiguration().getEV(),testShip.getConfiguration().getAV());
-        assertNotNull(damage);
         assertTrue("Should have been over or 0", greaterThanorEqual(damage,0));
     }
 

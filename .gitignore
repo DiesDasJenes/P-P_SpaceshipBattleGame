@@ -39,3 +39,4 @@ Thumbs.db
 # Configuration Files #
 #######################
 .idea/workspace.xml
+\.idea/

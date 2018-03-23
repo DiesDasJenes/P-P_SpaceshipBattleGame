@@ -1,8 +1,8 @@
 import static org.junit.Assert.*;
 
 public class ShipTest_ChangeStats {
-    Ship testShip;
-    Ship baddyShip;
+    private Ship testShip;
+    private Ship baddyShip;
 
     @org.junit.Before
     public void Before(){

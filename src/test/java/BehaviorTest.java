@@ -11,35 +11,44 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class BehaviorTest {
 
 
-    private int damage;
+    private int EV;
     private int shieldpower;
     private int expected;
+    private Behavior Behavior;
+    private Configuration Configuration;
 
-    // Inject via constructor
-    // ((DMG * SP) / 100) / AV - EV
-    // for {8, 2, 10}, numberA = 8, numberB = 2, expected = 10
-    public BehaviorTest(int damage, int shieldpower, int expected) {
-        this.damage = damage;
-        this.shieldpower = shieldpower;
+    // Trefferwahrscheinlichkeit: ((EV/1.5)+AV)-EVe
+    public BehaviorTest(int EV,ShipType type, int expected) {
+        this.EV = EV;
         this.expected = expected;
+        Configuration = new Configuration();
+        Configuration.setType(type);
+        Behavior = new Behavior(Configuration);
     }
 
     // name attribute is optional, provide an unique name for test
     // multiple parameters, uses Collection<Object[]>
-    @Parameterized.Parameters(name = "{index}: testAdd({0}+{1}) = {2}")
+    @Parameterized.Parameters(name = "{index}: getHitProb(EVe={0}+{1}) = {2}")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {1, 1, 2},
-                {2, 2, 4},
-                {8, 2, 10},
-                {4, 5, 9},
-                {5, 5, 10}
+                {0, ShipType.Corvette, 90},
+                {40, ShipType.Corvette, 50},
+                {50, ShipType.Corvette, 40},
+                {80, ShipType.Corvette, 10},
+                {90, ShipType.Corvette, 0},
+                {100, ShipType.Corvette, 0},
+                {0, ShipType.Freighter, 30},
+                {40, ShipType.Freighter, 0},
+                {50, ShipType.Freighter, 0},
+                {80, ShipType.Freighter, 0},
+                {90, ShipType.Freighter, 0},
+                {100, ShipType.Freighter, 0}
         });
     }
 
     @Test
-    public void test_addTwoNumbes() {
-       // assertThat(Math.addExact(numberA, numberB), is(expected));
+    public void getHitProbability() {
+       assertThat(Behavior.getHitProbability(EV), is(expected));
     }
 
 }

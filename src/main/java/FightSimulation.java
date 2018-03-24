@@ -9,7 +9,7 @@ public class FightSimulation {
     private List<Ship> ships;
 
     private void init() {
-        ships = new ArrayList<Ship>();
+        ships = new ArrayList<>();
         System.out.println("Wie viele spielen mit?");
         Integer players = Integer.parseInt(getInput());
         for (int i = 0; i < players; ++i) {

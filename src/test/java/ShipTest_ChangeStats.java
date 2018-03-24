@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class ShipTest_ChangeStats {
@@ -24,15 +26,15 @@ public class ShipTest_ChangeStats {
         return a <= b;
     }
 
-    @org.junit.Test
+    @Test
     public void fire() {
-        int damage = testShip.getBehavior().fire(testShip.getConfiguration().getDMG(),baddyShip.getConfiguration().getSP(),baddyShip.getConfiguration().getEV(),testShip.getConfiguration().getAV());
+        int damage = testShip.getBehavior().doDamage(baddyShip);
         assertTrue("Should have been over or 0", greaterThanorEqual(damage,0));
     }
 
     @org.junit.Test
     public void reduceHealth() {
-        int damage = testShip.getBehavior().fire(testShip.getConfiguration().getDMG(),baddyShip.getConfiguration().getSP(),baddyShip.getConfiguration().getEV(),testShip.getConfiguration().getAV());
+        int damage = testShip.getBehavior().doDamage(baddyShip);
         assertTrue("Should be over or 0", greaterThanorEqual(damage,0));
         double basicHealth = baddyShip.getConfiguration().getHEALTH();
         baddyShip.getConfiguration().reduceHealth(damage);

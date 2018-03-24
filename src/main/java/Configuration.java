@@ -5,7 +5,6 @@ public class Configuration {
     private double AV;
     private int HEALTH;
     private String ShipName;
-    private double maxValue = 100;
     private ShipType type;
 
     Configuration() {
@@ -29,7 +28,7 @@ public class Configuration {
         }
     }
     public void reduceHealth(double HEALTH) {
-        this.HEALTH += HEALTH;
+        this.HEALTH -= HEALTH;
     }
 
 
@@ -62,9 +61,7 @@ public class Configuration {
     }
 
     protected void setAV(double AV) {
-        if (AV <= 100) {
             this.AV = AV;
-        }
     }
 
     public double getHEALTH() {

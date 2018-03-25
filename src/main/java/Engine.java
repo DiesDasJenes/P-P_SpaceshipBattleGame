@@ -28,16 +28,16 @@ public class Engine {
         System.out.println("Was möchten sie tun?");
         char c = querist.ask("(A)ngreifen?\n(S)childe aufladen?\n(Z)ielgenauigkeit verstärken?\n(B)ooster verstärken?").toString().charAt(0);
         switch (c){
-            case 'Z' : Method raiseAccuracyValue = Behavior.class.getDeclaredMethod("raiseAccuracyValue",null); raiseAccuracyValue.setAccessible(true); return raiseAccuracyValue;
-            case 'S' : Method raiseShieldPower = Behavior.class.getDeclaredMethod("raiseShieldPower",null); raiseShieldPower.setAccessible(true); return raiseShieldPower;
-            case 'B' : Method raiseEvasionValue = Behavior.class.getDeclaredMethod("raiseShieldPower",null); raiseEvasionValue.setAccessible(true); return raiseEvasionValue;
-            case 'A' : Method doDamage = Behavior.class.getDeclaredMethod("raiseShieldPower",null); doDamage.setAccessible(true); return doDamage;
+            case 'Z' : Method raiseAccuracyValue = Behavior.class.getDeclaredMethod("raiseAccuracyValue"); raiseAccuracyValue.setAccessible(true); return raiseAccuracyValue;
+            case 'S' : Method raiseShieldPower = Behavior.class.getDeclaredMethod("raiseShieldPower"); raiseShieldPower.setAccessible(true); return raiseShieldPower;
+            case 'B' : Method raiseEvasionValue = Behavior.class.getDeclaredMethod("raiseEvasionValue"); raiseEvasionValue.setAccessible(true); return raiseEvasionValue;
+            case 'A' : Method doDamage = Behavior.class.getDeclaredMethod("doDamage", Ship.class); doDamage.setAccessible(true); return doDamage;
             default: System.out.println("Eingabe war inkorrekt.\n"); return chooseAction(querist);
         }
     }
 
-    private void chooseShip(Querist querist){
-
+    private Ship chooseShip(Querist querist){
+        return new Ship(new Configuration());
     }
 
     private void printAllShipNames(){

@@ -12,18 +12,16 @@ public class BehaviorTest {
 
 
     private int EV;
-    private int shieldpower;
     private int expected;
     private Behavior Behavior;
-    private Configuration Configuration;
 
     // Trefferwahrscheinlichkeit: ((EV/1.5)+AV)-EVe
     public BehaviorTest(int EV,ShipType type, int expected) {
         this.EV = EV;
         this.expected = expected;
-        Configuration = new Configuration();
-        Configuration.setType(type);
-        Behavior = new Behavior(Configuration);
+        Configuration configuration = new Configuration();
+        configuration.setType(type);
+        Behavior = new Behavior(configuration);
     }
 
     // name attribute is optional, provide an unique name for test

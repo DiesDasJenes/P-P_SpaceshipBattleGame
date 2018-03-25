@@ -6,7 +6,7 @@ I wrote this little "game" for my own Pen &amp; Paper adventure in which the cre
 
 ## Usage 
 
-Initialize the jar or the java class FightSimulation.java and then choose the count of players.
+Initialize the jar or the java class Pen_and_Paper_SpaceshipBattleGame.java and then choose the count of players.
 After this every player gets to choose his class of ship, shipName and team. 
 
 ## How the game is played

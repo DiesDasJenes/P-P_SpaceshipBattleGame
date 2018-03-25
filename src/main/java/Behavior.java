@@ -1,5 +1,5 @@
 public class Behavior {
-    Configuration configuration;
+    private Configuration configuration;
 
     Behavior(Configuration confShip) {
         this.configuration = confShip;
@@ -7,14 +7,14 @@ public class Behavior {
 
     int doDamage(Ship Enemy) {
         int HP = getHitProbability(Enemy.getConfiguration().getEV());
-        int HitNumber = getHitNumber();
+        int HitNumber = getRandNumber();
         boolean isHit = isHit(HitNumber,HP);
         boolean isCrit = isCriticalHit(HitNumber,HP);
         int DMG = configuration.getDMG();
         double otherSP = Enemy.getConfiguration().getSP();
         double totalDMG = isCrit ? (((DMG * otherSP) / 100)*2) : ((DMG * otherSP) / 100);
 
-        return isHit ? (int)totalDMG: 0;
+        return isHit ? (int)totalDMG : 0;
     }
 
     int getHitProbability(double otherEV){
@@ -22,16 +22,16 @@ public class Behavior {
         return HP <= 0 ? 0 : HP >= 100 ? 100 : HP ;
     }
 
-    private int getHitNumber(){
+    private int getRandNumber(){
         return (int)(Math.random()*100);
     }
 
-    private boolean isHit(int Hit, double HP){
-        return Hit <= HP;
+    private boolean isHit(int random, double HP){
+        return random <= HP;
     }
 
-    private boolean isCriticalHit(int Hit, double HP){
-        return Hit <= ((HP/10)*2);
+    private boolean isCriticalHit(int random, double HP){
+        return random <= ((HP/10)*2);
     }
 
     public void raiseAccuracyValue() {

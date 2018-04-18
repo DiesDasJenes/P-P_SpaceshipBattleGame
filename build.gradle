@@ -17,6 +17,12 @@ dependencies {
     testCompile "org.mockito:mockito-core:1.+"
 }
 
+compileJava {
+	options.fork = true
+	options.forkOptions.executable = 'javac'
+	options.compilerArgs << "-XDignore.symbol.file"
+}
+
 jacocoTestReport {
     reports {
         xml.enabled true

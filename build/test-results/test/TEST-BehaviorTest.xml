@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BehaviorTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-06-04T07:37:36" hostname="alaskas-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="getHitProbability[0: getHitProb(EVe=0+Raumschiffklasse:'Corvette', Schaden=40, Schildstärke=80.0, Basis-Beschleunigung=20.0, Basis-Zielgenauigkeit=70.0, Gesundheit=150) = 90]" classname="BehaviorTest" time="0.005"/>
+  <testcase name="getHitProbability[1: getHitProb(EVe=40+Raumschiffklasse:'Corvette', Schaden=40, Schildstärke=80.0, Basis-Beschleunigung=20.0, Basis-Zielgenauigkeit=70.0, Gesundheit=150) = 50]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[2: getHitProb(EVe=50+Raumschiffklasse:'Corvette', Schaden=40, Schildstärke=80.0, Basis-Beschleunigung=20.0, Basis-Zielgenauigkeit=70.0, Gesundheit=150) = 40]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[3: getHitProb(EVe=80+Raumschiffklasse:'Corvette', Schaden=40, Schildstärke=80.0, Basis-Beschleunigung=20.0, Basis-Zielgenauigkeit=70.0, Gesundheit=150) = 10]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[4: getHitProb(EVe=90+Raumschiffklasse:'Corvette', Schaden=40, Schildstärke=80.0, Basis-Beschleunigung=20.0, Basis-Zielgenauigkeit=70.0, Gesundheit=150) = 0]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[5: getHitProb(EVe=100+Raumschiffklasse:'Corvette', Schaden=40, Schildstärke=80.0, Basis-Beschleunigung=20.0, Basis-Zielgenauigkeit=70.0, Gesundheit=150) = 0]" classname="BehaviorTest" time="0.001"/>
+  <testcase name="getHitProbability[6: getHitProb(EVe=0+Raumschiffklasse:'Freighter', Schaden=30, Schildstärke=40.0, Basis-Beschleunigung=10.0, Basis-Zielgenauigkeit=20.0, Gesundheit=200) = 30]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[7: getHitProb(EVe=40+Raumschiffklasse:'Freighter', Schaden=30, Schildstärke=40.0, Basis-Beschleunigung=10.0, Basis-Zielgenauigkeit=20.0, Gesundheit=200) = 0]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[8: getHitProb(EVe=50+Raumschiffklasse:'Freighter', Schaden=30, Schildstärke=40.0, Basis-Beschleunigung=10.0, Basis-Zielgenauigkeit=20.0, Gesundheit=200) = 0]" classname="BehaviorTest" time="0.001"/>
+  <testcase name="getHitProbability[9: getHitProb(EVe=80+Raumschiffklasse:'Freighter', Schaden=30, Schildstärke=40.0, Basis-Beschleunigung=10.0, Basis-Zielgenauigkeit=20.0, Gesundheit=200) = 0]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[10: getHitProb(EVe=90+Raumschiffklasse:'Freighter', Schaden=30, Schildstärke=40.0, Basis-Beschleunigung=10.0, Basis-Zielgenauigkeit=20.0, Gesundheit=200) = 0]" classname="BehaviorTest" time="0.0"/>
+  <testcase name="getHitProbability[11: getHitProb(EVe=100+Raumschiffklasse:'Freighter', Schaden=30, Schildstärke=40.0, Basis-Beschleunigung=10.0, Basis-Zielgenauigkeit=20.0, Gesundheit=200) = 0]" classname="BehaviorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,4 +1,3 @@
-import com.sun.istack.internal.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +13,7 @@ public class Setup {
 
     int getPlayerCount(Querist querist) {
         String input = querist.ask("Wie viele spielen mit?").toString();
-        if (checkonlyNumbers(input)) {
+        if (checkOnlyNumbers(input)) {
             int count = Integer.parseInt(input);
             return count < 2 ? getPlayerCount(querist) : count;
         } else {
@@ -22,7 +21,7 @@ public class Setup {
         }
     }
 
-    private boolean checkonlyNumbers(String input){
+    private boolean checkOnlyNumbers(String input){
         boolean b;
         for (int j = 0; j < input.length(); j++) {
             char c = input.charAt(j);

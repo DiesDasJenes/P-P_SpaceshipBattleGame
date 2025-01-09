@@ -4,13 +4,26 @@
 
 I wrote this little "game" for my own Pen &amp; Paper adventure in which the crew had to fight an enemy spaceship.
 
-## Usage 
+## Getting Started
 
-Initialize the jar or the java class Pen_and_Paper_SpaceshipBattleGame.java and then choose the count of players.
-After this every player gets to choose his class of ship, shipName and team. 
+1. Run the game using either:
+   - The provided JAR file
+   - Compile and run `Pen_and_Paper_SpaceshipBattleGame.java`
+2. Select the number of players
+3. For each player:
+   - Choose a ship class
+   - Name your ship
+   - Select your team
 
-## How the game is played
+## Gameplay
 
-Everyone needs pen and paper to write the stats of his or other ships down. The player needs to remember and think of an strategy to fight the enemy. He has 4 options: shoot at a ship, recharge shields, gain speed or recalculate the targeting accuracy. 
+Each turn, players can choose from four actions:
+- 🎯 Attack an enemy ship
+- 🛡️ Recharge shields
+- 🚀 Increase speed
+- 🎲 Improve targeting accuracy
 
-Every stats changes the taken damage and possibilty of an hit. 
+All stats affect both damage output and hit probability. Keep track of your ship's status using pen and paper to plan your strategy effectively.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

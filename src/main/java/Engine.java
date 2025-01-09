@@ -13,10 +13,49 @@ public class Engine {
     Engine(){}
 
     public void run() {
-          System.out.println("Es werden nun " +  playerInformation.size() + " Schiffe gegeneinander kämpfen");
-          System.out.println("Wer wird gewinnen? Es beginnt: " + playerInformation.get((int)(Math.random()*playerInformation.size())).getConfiguration().getShipName());
+        System.out.println("Es werden nun " + playerInformation.size() + " Schiffe gegeneinander kämpfen");
+        Ship currentShip = playerInformation.get((int)(Math.random()*playerInformation.size()));
+        System.out.println("Wer wird gewinnen? Es beginnt: " + currentShip.getConfiguration().getShipName());
+        
+        Querist querist = new Querist(System.in, System.out);
+        int turn = 0;
+        
+        while (playerInformation.stream().allMatch(ship -> ship.getConfiguration().getHEALTH() > 0)) {
+            currentShip = playerInformation.get(turn % playerInformation.size());
+            System.out.println("\nEs ist dran: " + currentShip.getConfiguration().getShipName());
+            printAllShipNames();  // Print status of all ships
+            
+            try {
+                Method action = chooseAction(querist);
+                if (action.getName().equals("doDamage")) {
+                    System.out.println("Welches Schiff angreifen?");
+                    Ship target = chooseShip(querist);
+                    int damage = (int) action.invoke(currentShip.getBehavior(), target);
+                    System.out.println(currentShip.getConfiguration().getShipName() + 
+                        " verursacht " + damage + " Schaden bei " + 
+                        target.getConfiguration().getShipName());
+                } else {
+                    action.invoke(currentShip.getBehavior());
+                    System.out.println(action.getName() + " wurde ausgeführt");
+                }
+            } catch (Exception e) {
+                System.out.println("Fehler bei der Aktion: " + e.getMessage());
+            }
+            
+            turn++;
+        }
+        
+        Ship winner = playerInformation.stream()
+            .filter(ship -> ship.getConfiguration().getHEALTH() > 0)
+            .findFirst()
+            .orElse(null);
+            
+        if (winner != null) {
+            System.out.println("\nGewinner ist: " + winner.getConfiguration().getShipName());
+        } else {
+            System.out.println("\nUnentschieden!");
+        }
     }
-
 
     boolean isHealthoverZero(Ship ship){
         return ship.getConfiguration().getHEALTH() >= 0;
@@ -36,17 +75,24 @@ public class Engine {
         }
     }
 
-    private Ship chooseShip(Querist querist){
-        return new Ship(new Configuration());
+    private Ship chooseShip(Querist querist) {
+        printAllShipNames();
+        String targetName = querist.ask("Gib den Namen des Zielschiffs ein:").toString();
+        return playerInformation.stream()
+            .filter(ship -> ship.getConfiguration().getShipName().equals(targetName))
+            .findFirst()
+            .orElseGet(() -> {
+                System.out.println("Schiff nicht gefunden, bitte erneut versuchen.");
+                return chooseShip(querist);
+            });
     }
 
-    private void printAllShipNames(){
-        for(int i = 0; i < playerInformation.size(); i++) {
-            if(i%5==0){
-                System.out.println("\n");
-            }
-            System.out.print(" " + playerInformation.get(i) + " ");
+    private void printAllShipNames() {
+        System.out.println("\nAktueller Status:");
+        for (Ship ship : playerInformation) {
+            System.out.println(ship.toString());
         }
+        System.out.println();
     }
     //  int turn = 0;
     //  int enemy;

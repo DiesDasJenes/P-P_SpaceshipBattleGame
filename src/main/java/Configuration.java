@@ -68,7 +68,7 @@ public class Configuration {
         return HEALTH;
     }
 
-    private void setHEALTH(int HEALTH) {
+    protected void setHEALTH(int HEALTH) {
         this.HEALTH = HEALTH;
     }
 

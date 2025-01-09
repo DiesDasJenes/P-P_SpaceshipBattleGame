@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EngineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-04T07:37:36" hostname="alaskas-MacBook-Pro.local" time="0.002">
+<testsuite name="EngineTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-01-09T02:42:19" hostname="Zenith" time="0.14">
   <properties/>
-  <testcase name="isHealthoverZero" classname="EngineTest" time="0.002"/>
+  <testcase name="shouldReturnTrueForFullHealth()" classname="EngineTest" time="0.117"/>
+  <testcase name="shouldReturnFalseForNegativeHealth()" classname="EngineTest" time="0.001"/>
+  <testcase name="shouldCalculateDamageWithinWeaponRange()" classname="EngineTest" time="0.007"/>
+  <testcase name="shouldThrowExceptionForNullShip()" classname="EngineTest" time="0.005"/>
+  <testcase name="shouldReturnFalseForZeroHealth()" classname="EngineTest" time="0.001"/>
+  <testcase name="shouldAbsorbDamageWithShields()" classname="EngineTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

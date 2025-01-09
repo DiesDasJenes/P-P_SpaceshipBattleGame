@@ -42,3 +42,29 @@ Thumbs.db
 \.idea/
 
 \.gradle/4\.0/fileHashes/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# Build directories
+build/
+bin/
+target/
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache

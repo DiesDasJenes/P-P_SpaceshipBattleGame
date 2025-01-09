@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ShipTest_ChangeStats" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-06-04T07:37:36" hostname="alaskas-MacBook-Pro.local" time="0.004">
+<testsuite name="ShipTest_ChangeStats" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-01-09T02:42:19" hostname="Zenith" time="0.012">
   <properties/>
-  <testcase name="reduceAccuracyValue_to_negativeValue" classname="ShipTest_ChangeStats" time="0.0"/>
-  <testcase name="raiseEvasionValue_over_100" classname="ShipTest_ChangeStats" time="0.001"/>
-  <testcase name="raiseShieldPower_over_100" classname="ShipTest_ChangeStats" time="0.0"/>
-  <testcase name="reduceHealth" classname="ShipTest_ChangeStats" time="0.001"/>
-  <testcase name="fire" classname="ShipTest_ChangeStats" time="0.0"/>
-  <testcase name="reduceEvasiveValue_to_negativeValue" classname="ShipTest_ChangeStats" time="0.0"/>
-  <testcase name="raiseAccuracyValue_over_100" classname="ShipTest_ChangeStats" time="0.001"/>
+  <testcase name="reduceAccuracyValue_to_negativeValue()" classname="ShipTest_ChangeStats" time="0.004"/>
+  <testcase name="raiseShieldPower_over_100()" classname="ShipTest_ChangeStats" time="0.001"/>
+  <testcase name="reduceHealth()" classname="ShipTest_ChangeStats" time="0.001"/>
+  <testcase name="raiseEvasionValue_over_90()" classname="ShipTest_ChangeStats" time="0.001"/>
+  <testcase name="fire()" classname="ShipTest_ChangeStats" time="0.0"/>
+  <testcase name="reduceEvasiveValue_to_negativeValue()" classname="ShipTest_ChangeStats" time="0.0"/>
+  <testcase name="raiseAccuracyValue_over_100()" classname="ShipTest_ChangeStats" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
